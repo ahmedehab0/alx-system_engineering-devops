@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script that creates a key pair
+
+ssh-keygen -fschool -b4096 -Nbetty
