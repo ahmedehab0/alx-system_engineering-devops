@@ -2,8 +2,8 @@
 """export data in the csv format"""
 
 
-import requests
 import csv
+import requests
 from sys import argv
 
 if __name__ == "__main__":
@@ -14,4 +14,4 @@ if __name__ == "__main__":
         csv_writer = csv.writer(file, quoting = csv.QUOTE_ALL)
         
         for t in todo:
-            csv_writer.writerow([argv[1], users['name'], t['completed'], t['title']])
+            csv_writer.writerow([argv[1], users['username'], t['completed'], t['title']])
